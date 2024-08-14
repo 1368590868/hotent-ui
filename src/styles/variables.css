@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* 改变主题色变量 */
+.ht-typography__header {
+  position: relative;
+  padding-left: var(--header-padding-left);
+}
+
+.ht-typography__header::before {
+  content: '';
+  width: var(--bar-width);
+  background-color: var(--bar-color);
+  border-radius: calc(var(--bar-width) / 2);
+  transition: background-color 0.3s var(--bezier);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.el-popover__reference-wrapper > svg.fa-icon.el-popover__reference {
+  vertical-align: -3px;
+}
+
+.inputs.ht-form-inputs__block {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.inputs.ht-form-inputs__inline {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+}
+
+.ht-form-inputs__block.has-company-box,
+.ht-form-inputs__inline.has-company-box {
+  display: flex;
+}
+
+th.hidden,
+td.hidden,
+col[width='1'] {
+  display: none;
+}
+
+.inputs .clear-icon {
+  display: none;
+}
+
+.inputs .has-value:hover .clear-icon {
+  display: block;
+  cursor: pointer;
+  color: #dbdbdb;
+}
+
+.inputs .has-value:hover .user-icon,
+.inputs .has-value:hover .org-icon {
+  display: none;
+}
+
+.inputs .has-value .el-input .el-input__inner {
+  color: #fff;
+}
+
+.inputs .el-select__tags_readonly .tag-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tree-scrollbar .el-scrollbar__bar.is-horizontal {
+  height: 0;
+}
+
+.ht-select__dropdown .select-options, .has-page .select-options {
+  margin-bottom: 20px;
+}
+
+.ht-select__dropdown .el-pagination, .has-page .el-pagination {
+  position: absolute;
+  width: calc(100% - 40px);
+  background: #fff;
+  bottom: 0;
+  padding: 2px 20px;
+}
+
+.has-page .el-select-dropdown__item {
+  margin-bottom: 26px;
+}

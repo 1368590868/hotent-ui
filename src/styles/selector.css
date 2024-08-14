@@ -1,0 +1,140 @@
+.dialog-selector__wrapper {
+  overflow: unset !important;
+}
+
+@media (max-width: 1400px) {
+  .dialog-selector__wrapper ::v-deep .el-dialog {
+    width: 90%;
+    height: 90%;
+    margin-top: 4vh !important;
+  }
+  .dialog-selector__wrapper ::v-deep .el-dialog .ht-selector__table {
+    height: 380px;
+  }
+  .dialog-selector__wrapper ::v-deep .el-dialog .el-pagination {
+    white-space: pre-wrap !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .dialog-selector__wrapper ::v-deep .el-dialog {
+    width: 1260px;
+  }
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog {
+  min-width: 910px;
+  height: 76%;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__header {
+  background: #f8f8f8;
+  padding: 6px 20px;
+  height: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #eee;
+  border-radius: 2px 2px 0 0;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__title {
+  font-size: 16px;
+  color: #333;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__headerbtn {
+  top: 11px;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__body {
+  height: calc(100% - 120px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  font-size: 12px;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__body .el-main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-dialog__body .el-container {
+  height: 100%;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .el-input__inner {
+  font-size: 12px;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .left-aside {
+  overflow: unset;
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .left-aside .box-card {
+  height: calc(100% - 2px);
+}
+
+.dialog-selector__wrapper ::v-deep .el-dialog .left-aside .box-card .el-card__body {
+  max-height: unset;
+  overflow: auto;
+  height: calc(100% - 90px);
+}
+
+.dialog-selector__wrapper ::v-deep .el-pagination {
+  padding: 5px;
+}
+
+.dialog-selector__wrapper ::v-deep .el-pagination .el-input--suffix.el-input--mini > .el-input__inner {
+  height: 22px;
+}
+
+.dialog-selector__wrapper ::v-deep .dialog-footer {
+  text-align: center;
+}
+
+.mobile-dialog ::v-deep .el-dialog {
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  margin-top: 0 !important;
+  border-radius: 0;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-dialog__header {
+  border-radius: 0;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-dialog__body {
+  height: calc(100% - 90px);
+  padding: 0;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-dialog__footer {
+  padding: 5px 0 0 0;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-pager,
+.mobile-dialog ::v-deep .el-dialog .el-row {
+  line-height: 1;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-footer {
+  padding: 10px;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-main {
+  padding: 0;
+}
+
+.mobile-dialog ::v-deep .el-dialog .el-tabs__header {
+  margin: 0;
+  padding: 5px 20px;
+}
+
+.mobile-dialog ::v-deep .el-dialog .ht-header__search {
+  padding: 15px 10px 0 10px;
+}
+
+.mobile-dialog ::v-deep .el-dialog .ht-selector__table {
+  height: 100%;
+}

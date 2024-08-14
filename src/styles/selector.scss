@@ -1,0 +1,130 @@
+//弹窗样式
+.dialog-selector__wrapper {
+  overflow: unset !important;
+
+  ::v-deep {
+    @media (max-width: 1400px) {
+      .el-dialog {
+        width: 90%;
+        height: 90%;
+        margin-top: 4vh !important;
+        .ht-selector__table {
+          height: 380px;
+        }
+        .el-pagination{
+          white-space: pre-wrap !important;
+        }
+      }    
+    }
+
+    @media (min-width: 1400px) {
+      .el-dialog {
+        width: 1260px;
+      }
+    }
+
+    .el-dialog {
+      min-width: 910px;
+      height: 76%;
+      .el-dialog__header {
+        background: #f8f8f8;
+        padding: 6px 20px;
+        height: 24px;
+        line-height: 24px;
+        border-bottom: 1px solid #eee;
+        border-radius: 2px 2px 0 0;
+      }
+
+      .el-dialog__title {
+        font-size: 16px;
+        color: #333;
+      }
+
+      .el-dialog__headerbtn {
+        top: 11px;
+      }
+      .el-dialog__body {
+        height: calc(100% - 120px);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: auto;
+        font-size: 12px;
+        .el-main {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .el-container {
+          height: 100%;
+        }
+      }
+      .el-input__inner {
+        font-size: 12px;
+      }
+      .left-aside {
+        overflow: unset;
+        .box-card {
+          height: calc(100% - 2px);
+          .el-card__body {
+            max-height: unset;
+            overflow: auto;
+            height: calc(100% - 90px);
+          }
+        }
+      }
+    }
+
+    .el-pagination {
+      padding: 5px;
+
+      .el-input--suffix.el-input--mini > .el-input__inner {
+        height: 22px;
+      }
+    }
+
+    //弹窗底部按钮样式
+    .dialog-footer {
+      text-align: center;
+    }
+  }
+}
+
+// 移动端选择器样式
+.mobile-dialog {
+  ::v-deep .el-dialog {
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
+    border-radius: 0;
+    .el-dialog__header {
+      border-radius: 0;
+    }
+    .el-dialog__body {
+      height: calc(100% - 90px);
+      padding: 0;
+    }
+    .el-dialog__footer {
+      padding: 5px 0 0 0;
+    }
+    .el-pager,
+    .el-row {
+      line-height: 1;
+    }
+    .el-footer {
+      padding: 10px;
+    }
+    .el-main {
+      padding: 0;
+    }
+    .el-tabs__header {
+      margin: 0;
+      padding: 5px 20px;
+    }
+    .ht-header__search {
+      padding: 15px 10px 0 10px;
+    }
+    .ht-selector__table {
+      height: 100%;
+    }
+  }
+}
